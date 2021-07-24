@@ -11,6 +11,8 @@
 		446813FF26ACD879000E15F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446813FE26ACD879000E15F0 /* ContentView.swift */; };
 		4468140126ACD87C000E15F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4468140026ACD87C000E15F0 /* Assets.xcassets */; };
 		4468140426ACD87C000E15F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4468140326ACD87C000E15F0 /* Preview Assets.xcassets */; };
+		4468140F26ACD90D000E15F0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4468140E26ACD90D000E15F0 /* Weather.swift */; };
+		4468141326ACDA95000E15F0 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4468141226ACDA95000E15F0 /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		4468140026ACD87C000E15F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4468140326ACD87C000E15F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4468140526ACD87C000E15F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4468140E26ACD90D000E15F0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		4468141226ACDA95000E15F0 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		446813FB26ACD879000E15F0 /* OpenWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				4468141126ACDA6B000E15F0 /* Services */,
 				4468140C26ACD88F000E15F0 /* Models */,
 				446813FC26ACD879000E15F0 /* OpenWeatherAppApp.swift */,
 				446813FE26ACD879000E15F0 /* ContentView.swift */,
@@ -73,8 +78,17 @@
 		4468140C26ACD88F000E15F0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4468140E26ACD90D000E15F0 /* Weather.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4468141126ACDA6B000E15F0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4468141226ACDA95000E15F0 /* WeatherService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4468141326ACDA95000E15F0 /* WeatherService.swift in Sources */,
 				446813FF26ACD879000E15F0 /* ContentView.swift in Sources */,
+				4468140F26ACD90D000E15F0 /* Weather.swift in Sources */,
 				446813FD26ACD879000E15F0 /* OpenWeatherAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
