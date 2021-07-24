@@ -52,6 +52,7 @@
 		446813FB26ACD879000E15F0 /* OpenWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				4468140C26ACD88F000E15F0 /* Models */,
 				446813FC26ACD879000E15F0 /* OpenWeatherAppApp.swift */,
 				446813FE26ACD879000E15F0 /* ContentView.swift */,
 				4468140026ACD87C000E15F0 /* Assets.xcassets */,
@@ -67,6 +68,13 @@
 				4468140326ACD87C000E15F0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4468140C26ACD88F000E15F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
