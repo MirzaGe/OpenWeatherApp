@@ -14,12 +14,11 @@ class WeatherService {
             return
         }
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else {
                 completion(nil)
                 return
             }
-            
             let weatherResponse = try? JSONDecoder().decode(WeatherResponse.self, from: data)
             if let weatherResponse = weatherResponse {
                 let weather = weatherResponse.main
@@ -27,8 +26,8 @@ class WeatherService {
             } else {
                 completion(nil)
             }
-            .resume()
-        }
+            
+        }.resume()
         
     }
 }
