@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var weatherVM: WeatherViewModel
+    
+    init() {
+        self.weatherVM = WeatherViewModel()
+    }
+    
     var body: some View {
         Text("Hello, world!")
             .padding()
